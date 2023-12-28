@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <title>Mata mosquito</title>
+    <script src="../action/game.js"></script>
+</head>
+<body onresize="ajustArea()">
+
+    <div class="painel">
+        <div class="lifes">
+            <img id="v1" src="../assets/img/coracao_cheio.png">
+            <img id="v2" src="../assets/img/coracao_cheio.png">
+            <img id="v3" src="../assets/img/coracao_cheio.png">
+        </div>
+        <div class="cronometer">
+            Tempo restante: <span id="cronometer"></span>
+        </div>
+    </div>
+    <script>
+        document.getElementById('cronometer').innerHTML = time
+        var crateMosquito = setInterval(function (){
+            randomPosition() 
+        }, createMosquitoTime)
+    </script>
+</body>
+</html>

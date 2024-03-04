@@ -3,7 +3,10 @@ html{
 }
 body{
     background-image: url(../img/bg.jpg);
-    background-size: 100% auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 .mosquito1{
     width: 50px;
@@ -40,4 +43,30 @@ body{
     float: left;
     font-size: 20px;
     font-weight: bold;
+}
+@media  only screen and (max-width: 771.9px) {
+    body {
+        background-image: url(../img/bg_low.jpeg) !important ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .col img{
+        margin-top: 20px;
+        height: 280px;
+    }
+}
+
+@media only screen and (min-width: 772px) and (max-width: 992px) {
+    body{
+        background-image: url(../img/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    
+    }
+    .col img{
+        margin-top: 30px;
+        height: 450px;
+    }
 }
